@@ -30,7 +30,7 @@ const[cart, setCart]=useState([]);
     <div className="App">
       
         <h1> Data Loaded: {countries.length}</h1>
-        <h1>Country Added:{cart.length} </h1>
+        <h1>Toatal Country Added:{cart.length} </h1>
         <Cart cart={cart} ></Cart>
         <p id="pid">Country</p>
           {countries.map((country,index) => <Country country={country} key={ index}  handleAddCountry={handleAddCountry} />)}
